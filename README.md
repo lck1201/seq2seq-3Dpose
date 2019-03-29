@@ -1,6 +1,6 @@
 # Exploiting temporal information for 3D pose estimation
 
-Reproduction of [Exploiting temporal information for 3D pose estimation](https://arxiv.org/abs/1711.08585v1</br>)<br/>
+Reproduction of [Exploiting temporal information for 3D pose estimation](http://openaccess.thecvf.com/content_ECCV_2018/papers/Mir_Rayat_Imtiaz_Hossain_Exploiting_temporal_information_ECCV_2018_paper.pdf)<br/>
 Original implement is [here](https://github.com/rayat137/Pose_3D)
 
 TODO:
