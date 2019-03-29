@@ -104,3 +104,4 @@ venv.bak/
 
 .idea/
 *.xml
+*.pkl
