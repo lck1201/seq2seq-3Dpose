@@ -1,0 +1,10 @@
+*.pkl
+*.log
+*.params
+*.txt
+*.xlsx
+*.yaml
+.vscode/
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/

@@ -1,0 +1,6 @@
+VIS/
+.ipynb_checkpoints/
+*.py
+*.ipynb
+
+*.log
