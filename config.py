@@ -13,11 +13,11 @@ def str2bool(v):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--gpu', help='number of GPUs to use',  default='0', type=str)
+    parser.add_argument('--gpu', help='GPUs to use, e.g. 0,1,2,3',  default='0', type=str)
     parser.add_argument('--root', help='/path/to/code/root/',
                         default='/home/chuankang/code/seq2seq-3Dpose/', type=str)
     parser.add_argument('--dataset', help='/path/to/your/dataset/root/',
-                        default='/home/chuankang/HardDrive4T/data_chuankang/hm36/', type=str)
+                        default='./data/', type=str)
     parser.add_argument('--model', help='/path/to/your/model/, to specify only when test', type=str)
     parser.add_argument('--debug', help='debug mode', default=False, type=str2bool)
     args, rest = parser.parse_known_args()
@@ -101,6 +101,7 @@ def gen_config(config_file):
 
 
 def update_config_from_args(config, args):
+    config.gpu = args.gpu
     config.DEBUG = args.debug
     config.DATASET.root_path = [args.root]
     config.DATASET.dataset_path = [args.dataset]
